@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/styles.css" />
+    <title>Contáctanos | Rooftop Dev Lab</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- div principal -->
+    <div class="contact">
+      <!-- div para el header -->
+      <header class="header-page">
+        <!-- div para el contenido del header -->
+        <nav class="navigation">
+          <a href="https://rooftop.dev/"
+            ><img
+              class="logo"
+              src="https://rooftop.dev/images/rooftop-logo.webp"
+              alt="logo-rooftop"
+              height="25"
+          /></a>
+
+          <div class="nav-list">
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.rooftopacademy.com/"
+                  >Academy</a
+                >
+              </li>
+              <li>
+                <a target="_self" href="http://127.0.0.1:5500/index.html"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://rooftop.dev/apply">Aplica</a>
+              </li>
+              <li>
+                <a id="button" target="_blank" href="https://rooftop.dev/hire"
+                  >Contrata</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!-- div para todo el contenido del formulario -->
+      <section class="section-form">
+        <!-- div para la información de contacto -->
+        <div class="section-info">
+          <!-- sección "Contáctanos" -->
+          <div class="section-contact">
+            <h1>Contáctanos</h1>
+            <p>
+              Completa el formulario y un representante de Rooftop te contactará
+              en la brevedad.
+            </p>
+          </div>
+
+          <!-- sección "Encuéntranos" -->
+          <div class="section-find">
+            <div class="image-find">
+              <img src="public/find.jpg" alt="maps" />
+            </div>
+            <div class="paragraph">
+              <h1>Encuéntranos</h1>
+              <p>3050 Biscayne Bivd Suite 302,</p>
+              <p>Miami, Florida 33137, US</p>
+            </div>
+          </div>
+
+          <!-- sección "Envíanos un correo" -->
+          <div class="section-find">
+            <div class="image-mail">
+              <img src="public/letter.jpg" alt="letter" />
+            </div>
+            <div class="paragraph">
+              <h1>Envíanos un correo</h1>
+              <p>info@rooftop.dev</p>
+            </div>
+          </div>
+
+          <!-- sección "redes" -->
+          <div class="section-social-media">
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/rooftop.dev/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/Rooftop.dev"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.linkedin.com/company/rooftopdev/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- div para los datos a pedir del formulario -->
+        <form id="section-form-data">
+          <div class="grid-name-send">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Nombre completo"
+              required=""
+              pattern="[a-zA-Z]+[a-zA-Z]"
+            />
+            <select class="select">
+              <option disabled selected>Enviar a</option>
+              <option value="generalQuestions">Preguntas generales</option>
+              <option value="sales">Ventas</option>
+              <option value="customerSupport">Atención al cliente</option>
+              <option value="press">Prensa</option>
+              <option value="partnerships">Partnerships</option>
+              <option value="investors">Inversores</option>
+              <option value="community">Comunidad</option>
+              <option value="others">Otros</option>
+            </select>
+          </div>
+
+          <div class="grid">
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              placeholder="Correo electrónico"
+              required=""
+              pattern="[a-zA-Z]+"
+            />
+          </div>
+
+          <div class="grid">
+            <textarea
+              name="about"
+              id="about"
+              cols="15"
+              rows="6"
+              placeholder="Me gustaría saber acerca de..."
+              required=""
+              pattern="[a-zA-Z]+"
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" id="button-contact">Contactanos</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
